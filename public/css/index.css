@@ -9,6 +9,7 @@
     --blanco: #FFFFFF;
     --crudo: #F2F2F2;
     --gris: #d3dbd9;
+    --verde: #00a774;
 
     /* FUENTES */
     --poppins: "Poppins", serif;
@@ -70,12 +71,12 @@ header > nav{
 header > nav.mostrar{
     left: 0;
 }
-header > nav a, header > nav p{
+header > nav a, header > nav span{
     color: var(--blanco);
 }
 
 @media screen and (min-width: 768px) {
-    header > nav p{
+    header > nav span{
         display: none;
     }
     header > nav a{
@@ -95,7 +96,7 @@ header > a#logo > img{
     width: 100%;
     height: 100%;
 }
-header > a#btn-menu > span{
+header > a#btn-menu > svg{
     color: var(--azul);
 }
 @media screen and (min-width: 768px) {
@@ -324,13 +325,22 @@ main > section#contacto form > fieldset textarea{
     outline: none;
     resize: none;
 }
+main > section#contacto h3{
+    text-align: center;
+}
 main > section#contacto a{
-    padding: .7rem 1rem;
+    width: 3rem;
+    padding: .2rem;
+    aspect-ratio: 1/1;
     margin: 1rem;
-    background-color: var(--celeste_suave);
-    color: var(--blanco);
+    background-color: var(--verde);
     border-radius: .3rem;
     transition: all .2s ease-in-out
+}
+main > section#contacto a svg{
+    width: 100%;
+    height: 100%;
+    fill: var(--blanco);
 }
 main > section#contacto a:hover{
     box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .2);
