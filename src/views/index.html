@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Fontaneria Profesional | Malaga</title>
+</head>
+<body>
+    <header>
+        <a href="#banner-principal" id="logo">
+            <img src="/img/logo.png" alt="logo">
+        </a>
+        <nav id="enlaces">
+            <p id="cerrar">X</p>
+            <a href="#servicios">Nuestros Servicios</a>
+            <a href="#contacto">Contactanos</a>
+            <a href="#somos">Quienes Somos</a>
+        </nav>
+        <a href="#" id="btn-menu">
+            <span class="material-symbols-outlined">menu</span>
+        </a>
+    </header>
+
+    <main>
+        <header id="banner-principal">
+            <h1>Bienvenido a Fontaneria Profesional</h1>
+            <p>Contamos con los mejores fontaneros de Malaga</p>
+        </header>
+        <section id="servicios">
+            <header class="banner-section">
+                <h2>Nuestros Servicios</h2>
+                <span></span>
+            </header>
+            <ul id="lista-servicios">
+                <li class="servicio">
+                    <h3>Electricidad Express</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iste omnis saepe libero voluptas repudiandae!</p>
+                </li>
+                <li class="servicio">
+                    <h3>Climatización</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ullam architecto, itaque repellat tenetur id.</p>
+                </li>
+                <li class="servicio">
+                    <h3>Cargas de Gas - Aire Acondicionados</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem totam, neque delectus sit cumque dolorem.</p>
+                </li>
+            </ul>
+        </section>
+        </section>
+        <section id="contacto">
+            <header class="banner-section">
+                <h2>Contactanos</h2>
+            </header>
+            <form action="/enviar" method="POST">
+                <fieldset>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <textarea name="msj" id="msj" required></textarea>
+                </fieldset>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <h3>O envianos un mensaje por WhatsApp</h3>
+            <a href="whatsapp://send?phone=2246481147&text=Hola Mundo">Enviar mensaje</a>
+        </section>
+        <section id="somos">
+            <header class="banner-section">
+                <h2>Qiuenes Somos</h2>
+            </header>
+                <p>Fontanero Lampista Tecnico <span>Centro Europeo de Barcelona</span></p>
+                <p>ACTUALMENTE REALIZANDO EL MASTER PARA LA CERTIFICACION RITE, PARA INSTALAR MANTENER Y REVISAR CALDERAS, AEROTERMIAS, CLIMATIZACION FOTOVOLTAICA Y OTROS SISTEMAS TERMICOS EN EDIFICIOS
+                    <span>MASTERD MALAGA</span>
+                </p>
+        </section>
+    </main>
+    <footer>
+        <h2>Redes Sociales</h2>
+        <article>
+
+        </article>
+        <p>© 2025 Fontaneria Profesional. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        const nav = document.getElementById("enlaces");
+        const btn_menu = document.getElementById("btn-menu");
+        const btn_cerrar = document.getElementById("cerrar");
+
+        btn_menu.addEventListener("click", e => {
+            nav.classList.add("mostrar");
+        })
+        btn_cerrar.addEventListener("click", e => {
+            nav.classList.remove("mostrar");
+        })
+        
+    </script>
+</body>
+</html>
