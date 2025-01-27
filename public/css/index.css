@@ -61,7 +61,7 @@ header > nav{
 }
 @media screen and (min-width: 768px) {
     header > nav{
-        width: 50%;
+        width: 70%;
         position: inherit;
         flex-flow: row wrap;
         justify-content: flex-end;
@@ -89,8 +89,8 @@ header > nav a, header > nav span{
 }
 
 header > a#logo{
-    width: 3rem;
-    height: 3rem;
+    width: 8rem;
+    height: 3.5rem;
 }
 header > a#logo > img{
     width: 100%;
@@ -207,6 +207,7 @@ main > section > header.banner-section > h2{
     text-align: center;
     z-index: 2;
     color: var(--blanco);
+    font-size: 2.8rem;
     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
 }
 main > section#servicios > header.banner-section{
@@ -259,74 +260,25 @@ main > section#servicios > ul > li:hover{
     transform: scale(1.02);
     box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .5);
 }
-main > section#servicios > ul > li h3, p{
+main > section#servicios > ul > li h3{
     text-shadow: none;
+    text-align: center;
 }
-
-/* FALTAN TRABAJOS */
-/* main > section#trabajos{
-    
-} */
-
-main > section#contacto form{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main > section#contacto{
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-}
-main > section#contacto form > fieldset{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    padding: .3rem;
-    border: none;
-}
-main > section#contacto form button{
-    padding: .7rem 1rem;
-    margin: 1rem;
-    background-color: var(--celeste);
-    color: var(--blanco);
-    border-radius: .3rem;
-    border: none;
-    cursor: pointer;
-    transition: all .2s ease-in-out
-
-}
-main > section#contacto form button:hover{
-    background-color: var(--azul);
-}
-@media screen and (min-width: 768px){
-    main > section#contacto {
-        flex-direction: column;
-    }
-    main > section#contacto form > fieldset{
-        width: 70%;
-    }
-}
-main > section#contacto form > fieldset label{
-    width: 100%;
-}
-main > section#contacto form > fieldset input{
-    width: 100%;
-    padding: .5rem;
-    border: solid .1rem var(--gris);
-    border-radius: .3rem;
-    outline: none;
-}
-main > section#contacto form > fieldset textarea{
-    width: 100%;
-    height: 5rem;
-    padding: .5rem;
-    border: solid .1rem var(--gris);
-    border-radius: .3rem;
-    outline: none;
-    resize: none;
 }
 main > section#contacto h3{
+    width: 100%;
     text-align: center;
+    margin: 3rem 0;
+    font-size: 2rem;
+}
+main > section#contacto p{
+    font-size: 1.2rem;
+}
+main > section#contacto p > span{
+    font-weight: bold;
+
 }
 main > section#contacto a{
     width: 3rem;
@@ -353,6 +305,7 @@ main > section#somos p{
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 1rem;
 }
 main > section#somos p span{
     width: 100%;
