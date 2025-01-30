@@ -306,6 +306,8 @@ main > section#somos p{
     flex-direction: column;
     text-align: center;
     padding: 1rem;
+    background-color: transparent;
+    color: var(--negro);
 }
 main > section#somos p span{
     width: 100%;
